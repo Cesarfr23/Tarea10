@@ -1,6 +1,6 @@
 ﻿namespace Movies
 {
-    partial class Form1
+    partial class RegistroCategorias
     {
         /// <summary>
         /// Required designer variable.
@@ -91,9 +91,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(25, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(30, 20);
+            this.label1.Size = new System.Drawing.Size(96, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "ID:";
+            this.label1.Text = "CategoriaId:";
             // 
             // label2
             // 
@@ -131,7 +131,7 @@
             this.button4.Text = "Buscar";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // RegistroCategorias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -140,8 +140,8 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "RegistroCategorias";
+            this.Text = "RegistroCategorias";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

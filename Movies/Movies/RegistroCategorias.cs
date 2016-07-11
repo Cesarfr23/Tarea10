@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Movies
 {
-    public partial class Form1 : Form
+    public partial class RegistroCategorias : Form
     {
-        public Form1()
+        public RegistroCategorias()
         {
             InitializeComponent();
         }
