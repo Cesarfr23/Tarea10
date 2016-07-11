@@ -12,6 +12,9 @@ namespace Movies
 {
     public partial class RegistroCategorias : Form
     {
+        Conexion conexion = new Conexion();
+        Categorias categoria = new Categorias();
+
         public RegistroCategorias()
         {
             InitializeComponent();
@@ -19,8 +22,38 @@ namespace Movies
 
         private void RegistroCategorias_Load(object sender, EventArgs e)
         {
-            Conexion conexion = new Conexion();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            conexion.Insertar(Convert.ToInt32(CategoriasIdTextBox.Text),DescripcionTextBox.Text);
+            CategoriasIdTextBox.Text = "";
+            DescripcionTextBox.Text = "";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (CategoriasIdTextBox.Text.Length > 0)
+            {
+                categoria.CategoriaId = Convert.ToInt32(CategoriasIdTextBox.Text);
+                categoria.Descripcion = DescripcionTextBox.Text;
+            }
+            else
+            {
+                categoria.Descripcion = DescripcionTextBox.Text;
+                MessageBox.Show("Categoria Guardada.");
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            categoria.CategoriaId = Convert.ToInt32(CategoriasIdTextBox.Text);
+            MessageBox.Show("Eliminado");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            categoria.CategoriaId = Convert.ToInt32(CategoriasIdTextBox.Text);
+        }
     }
 }
