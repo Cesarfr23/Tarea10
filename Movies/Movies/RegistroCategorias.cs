@@ -16,5 +16,11 @@ namespace Movies
         {
             InitializeComponent();
         }
+
+        private void RegistroCategorias_Load(object sender, EventArgs e)
+        {
+            Conexion conexion = new Conexion();
+        }
+
     }
 }

@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Categorias.cs" />
+    <Compile Include="Conexion.cs" />
     <Compile Include="RegistroCategorias.cs">
       <SubType>Form</SubType>
     </Compile>
